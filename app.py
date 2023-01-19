@@ -1,7 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 
-version = '1.0'
+version = '2.0'
 
 @app.route('/')
 def hello_world():
