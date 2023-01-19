@@ -1,9 +1,11 @@
 from flask import Flask
 app = Flask(__name__)
 
+version = '1.0'
+
 @app.route('/')
 def hello_world():
-    return '<h1>Hello, World ! - Pyflask Demo</h1>'
+    return f'<h1>Hello, World ! - Pyflask Demo</h1><p>I am version <b>{version}</b>'
 
 @app.route('/version')
 def get_version():
